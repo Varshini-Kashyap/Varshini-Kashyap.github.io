@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const highlights = [
   'Graduating May 2026',
-  '3+ Years Experience',
+  '2+ Years Experience',
   'AWS & Azure Certified',
   'Full-Stack Developer',
   'AI/ML Engineer',
@@ -66,10 +66,10 @@ export default function About() {
           >
             <div className="max-w-3xl">
               <p className="text-[#000000] text-base md:text-lg leading-relaxed mb-4">
-                I am a Computer Science graduate student at George Mason University passionate about building AI-powered applications that solve real-world problems. With hands-on experience across the full software development lifecycle, I specialize in architecting scalable systems that bridge cutting-edge AI with production-ready engineering.
+                I am a CS grad student at George Mason University with 2+ years of experience building production systems. I care about writing software that actually ships  not just demos, but real products that people use. My work spans AI backends, full-stack web platforms, and cloud infrastructure on AWS.
               </p>
               <p className="text-[#000000] text-base md:text-lg leading-relaxed mb-4">
-                At InterAgency Inc., I led the development of an AI chatbot from concept to deployment architecting RAG-based systems, designing cloud infrastructure on AWS ECS Fargate, and mentoring team members through technical challenges. My work spans building full-stack applications with React and Python, deploying containerized microservices, and evaluating LLMs to understand their real-world reliability.
+               At InterAgency Inc., I got to work on problems I found genuinely interesting: evaluating 15 LLMs against 140 real questions to figure out which one actually performs best, building a RAG chatbot that helps people navigate government permit processes, and taking a proposal management tool from Figma mockups all the way to AWS production with React, Node.js, MySQL, Auth0, and Stripe.
               </p>
               <p className="text-[#000000] text-base md:text-lg leading-relaxed mb-5">
                 What drives me is the intersection of innovation and impact: leveraging technologies like prompt engineering, multi-agent systems, and cloud-native architectures to create software that's not just functional, but transformative. Whether it's reducing manual workflows by 60% or building developer tools that detect 90% of bugs automatically, I'm motivated by measurable outcomes that matter.

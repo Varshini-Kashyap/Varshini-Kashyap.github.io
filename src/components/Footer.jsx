@@ -22,7 +22,7 @@ export default function Footer() {
           >
             <h3 className="text-lg font-bold text-white mb-4"></h3>
             <p className="text-xl font-semibold text-white">Varshini Krishna Mohan</p>
-            <p className="text-white/90 mb-3">Software Engineer | AI/ML Enthusiast</p>
+            <p className="text-white/90 mb-3">Software Engineer | AI/ML & Full-Stack</p>
             <p className="text-white/80 italic">
               &ldquo;Building innovative solutions with cutting-edge technologies&rdquo;
             </p>

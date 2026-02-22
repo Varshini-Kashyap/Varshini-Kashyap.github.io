@@ -92,7 +92,7 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-xl md:text-2xl text-white/90 font-medium mb-2"
           >
-            Software Engineer | AI/ML Enthusiast
+            Software Engineer | AI/ML & Full-Stack
           </motion.p>
 
           <motion.p
@@ -111,7 +111,7 @@ export default function Hero() {
             className="text-sm md:text-base text-white/75 max-w-2xl mx-auto mb-8 leading-relaxed"
           >
             Passionate about building scalable AI-powered applications and solving complex
-            problems through innovative software solutions. 3+ years of experience in
+            problems through innovative software solutions. 2+ years of experience in
             full-stack development, cloud infrastructure, and machine learning.
           </motion.p>
 

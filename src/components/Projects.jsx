@@ -4,54 +4,64 @@ import { HiDocumentText } from 'react-icons/hi'
 
 const projects = [
   {
-    title: 'ConnectEd - AI Alumni Mentorship Platform',
+    title: 'Axono- AI Building Permits Chatbot',
     description:
-      'Developed AI-powered platform matching college students with alumni mentors using intelligent algorithms; implementing cloud-native architecture with scalable backend services for seamless networking experience.',
-    tech: ['React', 'Node.js', 'AWS', 'PostgreSQL', 'AI Matching Algorithms'],
+      'Production RAG-based chatbot helping users navigate DC and Montgomery County building permit processes. Built with Claude Sonnet API, ChromaDB vector storage, and Flask backend, deployed on AWS ECS Fargate with EFS persistent storage and ALB.',
+    tech: ['Python', 'Flask', 'Claude API', 'ChromaDB', 'AWS ECS Fargate', 'Auth0', 'Stripe'],
     links: [
-      { label: 'GitHub', url: 'https://github.com/Varshini-Kashyap/ConnectEd.git', icon: 'github' },
+      { label: 'Live Demo', url: 'http://perry-alb-1208806327.us-east-1.elb.amazonaws.com/', icon: 'external' },
     ],
-    status: 'Jan 2026',
+    status: 'Dec 2025',
   },
   {
     title: 'DualReview - AI Code Reviewer & Migration Platform',
     description:
-      'Full-stack developer tool supporting automated code review and cross-language migration across 12 programming languages. Implemented dual-review workflow achieving 20-35% quality improvement and detecting 90%+ of bugs and security vulnerabilities.',
-    tech: ['Python', 'LangChain', 'OpenAI API', 'Claude API', 'React', 'PostgreSQL'],
+      'Developer tool supporting automated code review and cross-language migration across 12 programming languages. Engineered a dual-LLM review workflow with LangChain delivering 20-35% code quality improvement and detecting 90%+ of bugs and security vulnerabilities.',
+    tech: ['Python', 'LangChain', 'React', 'PostgreSQL'],
     links: [
       { label: 'GitHub', url: 'https://github.com/Varshini-Kashyap/DualReview-AI-Code-Reviewer-Migration-Platform.git', icon: 'github' },
     ],
-    status: 'Dec2025',
-  },
-  {
-    title: 'AI-Powered Homework Grader',
-    description:
-      'Full-stack grading platform with automated evaluation workflows and analytics, reducing grading time by 60% while ensuring consistency and responsible AI use.',
-    tech: ['Python', 'Flask', 'React', 'LLM APIs', 'PostgreSQL'],
-    links: [
-      { label: 'GitHub', url: 'https://github.com/Varshini-Kashyap/Homework-Grader.git', icon: 'github' },
-    ],
-    status: 'Sep2025',
+    status: 'Dec 2025',
   },
   {
     title: 'LLM Resume Evaluation System',
     description:
-      'Built comprehensive AI evaluation pipeline comparing Llama 3.2, Mistral 7B, and Phi-3 Mini across 900+ test cases; discovered 30-40% score variance between models highlighting reliability challenges in AI-driven recruitment.',
-    tech: ['Python', 'PyTorch', 'Llama 3.2', 'Mistral 7B', 'Phi-3 Mini', 'Flask'],
+      'Research pipeline comparing Llama 3.2, Mistral 7B, and Phi-3 Mini across 900 evaluations for resume screening. Discovered weak inter-model ranking correlation (ρ ≈ 0.45), showing that hiring outcomes depend on model choice. Published findings.',
+    tech: ['Python', 'Llama 3.2', 'Mistral 7B', 'Phi-3 Mini', 'Flask', 'React'],
     links: [
       { label: 'Paper', url: 'https://1drv.ms/b/c/68a4999b3b22ea6c/IQBiUCG8EuqMS4wCvo0s1Xy7Ac5Xhwt_weMj9hHad_aTMH4?e=kCDNEJ', icon: 'paper' },
     ],
     status: 'Dec 2025',
   },
   {
+    title: 'ConnectEd - AI Alumni Mentorship Platform',
+    description:
+      'AI mentor-matching platform built in 24 hours at HackFax x PatriotHacks 2026. Integrated Groq LLM recommendations into a FastAPI backend with JWT auth and React 18 frontend, containerized with Docker.',
+    tech: ['FastAPI', 'React 18', 'Groq API', 'JWT', 'SQLite', 'Docker'],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/Varshini-Kashyap/ConnectEd.git', icon: 'github' },
+    ],
+    status: 'Jan 2026',
+  },
+  {
     title: 'Sign Language Recognition System',
     description:
-      'Real-time ML system recognizing sign language gestures achieving 92% accuracy; applied CNN architecture for accessibility applications enabling communication for hearing-impaired users.',
-    tech: ['Python', 'TensorFlow', 'OpenCV', 'Computer Vision', 'CNN'],
+      'Real-time ML system recognizing ASL gestures with 92% classification accuracy. Trained a CNN model with TensorFlow and OpenCV on custom gesture datasets; published peer-reviewed findings in PiCES Journal.',
+    tech: ['Python', 'TensorFlow', 'PyTorch', 'OpenCV', 'CNN'],
     links: [
-      { label: 'Paper', url: 'https://pices-journal.com/ojs/index.php/pices/article/view/380/', icon: 'paper' },
+      { label: 'Publication', url: 'https://pices-journal.com/ojs/index.php/pices/article/view/380/', icon: 'paper' },
     ],
-    status: 'Nov 2022',
+    status: 'Dec 2022',
+  },
+  {
+    title: 'AI-Powered Homework Grader',
+    description:
+      'Solo-built React application for teachers to create assignments, auto-grade submissions using keyword matching with partial credit, and track student performance with analytics dashboards. Features dynamic question management, real-time feedback generation, and per-question performance breakdowns.',
+    tech: ['React', 'JavaScript', 'Jest', 'React Testing Library', 'CSS3'],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/Varshini-Kashyap/Homework-Grader.git', icon: 'github' },
+    ],
+    status: 'Sep 2025',
   },
 ]
 
@@ -130,6 +140,10 @@ export default function Projects() {
                       {link.icon === 'github' ? (
                         <>
                           <FaGithub size={18} />
+                          {link.label}
+                        </>
+                      ) : link.icon === 'external' ? (
+                        <>
                           {link.label}
                         </>
                       ) : (

@@ -2,17 +2,18 @@ import { motion } from 'framer-motion'
 
 const experiences = [
   {
-    role: 'AI/ML Software Engineer Intern',
+    role: 'Software Engineer Intern | AI / Backend',
     company: 'InterAgency Inc.',
     location: 'Washington, DC',
     duration: 'Aug 2025 - Dec 2025',
     logo: 'IA',
     bullets: [
-      'Architected and deployed AI-powered chatbot using RAG architecture with Claude API, ChromaDB, and AWS ECS Fargate processing 500+ daily queries with 77-80% accuracy',
-      'Built full-stack application with React frontend and Python FastAPI backend; implemented infrastructure-as-code using CloudFormation for automated provisioning',
-      'Designed object-oriented system with multi-threaded architecture; performed code reviews and debugging achieving 99.5% uptime in production environment',
+      'Engineered an LLM evaluation pipeline benchmarking 15 models (API and locally-hosted) across 140 domain-specific questions over 2 test runs, with answers scored by industry experts to drive production model selection',
+      'Architected a production RAG-based building permits chatbot using Claude Sonnet API with ChromaDB vector storage and Flask backend, serving 500+ regulatory documents across DC and Montgomery County permit databases',
+      'Deployed the full system on AWS using ECS Fargate, EFS for persistent ChromaDB storage, and Application Load Balancer with automated health checks',
+      'Built a real-time admin analytics dashboard surfacing query failure patterns, token usage, and model behavior, driving prompt engineering improvements in production',
     ],
-    tech: ['Python', 'FastAPI', 'React', 'Claude API', 'AWS (ECS, Fargate, RDS, S3)', 'Docker', 'ChromaDB', 'Auth0', 'Stripe'],
+    tech: ['Python', 'Flask', 'Claude API', 'ChromaDB', 'AWS (ECS Fargate, EFS, ALB, Amplify)', 'Auth0', 'Stripe'],
   },
   {
     role: 'Full-Stack Software Engineer Intern',
@@ -21,24 +22,37 @@ const experiences = [
     duration: 'Jun 2025 - Aug 2025',
     logo: 'IA',
     bullets: [
-      'Developed internal automation platform using React, Node.js, and TypeScript; built REST APIs and CI/CD pipelines achieving 85% user adoption and 60% efficiency improvement',
-      'Optimized PostgreSQL database queries improving performance by 30%; deployed on AWS with Docker containers ensuring 99.9% uptime',
-      'Collaborated in Agile environment with sprint planning and code reviews; wrote technical documentation and participated in requirements analysis',
+      'Developed a commercial proposal management platform end-to-end from Figma wireframes to AWS production deployment using React, Node.js/Express.js, and MySQL on RDS',
+      'Integrated Auth0 for role-based access control, Stripe for payment processing, AWS S3 for document storage, and Microsoft Graph API through Azure AD for direct Outlook email delivery of proposal PDFs',
+      'Deployed frontend on AWS Amplify, backend on Elastic Beanstalk, with CloudFront as a unified HTTPS endpoint to resolve mixed-content and CORS issues',
+      'Achieved 85% user adoption in the first month with automated proposal generation, approval workflows, and status tracking across 6 agile sprints',
     ],
-    tech: ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'AWS (EC2, S3)', 'Docker', 'GitHub Actions'],
+    tech: ['React', 'Node.js', 'Express.js', 'MySQL', 'AWS (RDS, S3, Amplify, Elastic Beanstalk, CloudFront)', 'Auth0', 'Stripe', 'Microsoft Graph API'],
   },
   {
-    role: 'Network Engineer',
+    role: 'Associate Network Engineer',
     company: 'NTT Ltd.',
     location: 'Bangalore, India',
     duration: 'Aug 2022 - Aug 2024',
     logo: 'NT',
     bullets: [
-      'Supported production systems for 500+ enterprise clients; troubleshot complex networking issues achieving 95% first-call resolution through systematic debugging',
-      'Automated monitoring workflows using Python scripting; reduced manual intervention by 60% and improved system reliability',
-      'Collaborated with international teams across time zones; mentored junior engineers on best practices and conducted technical training sessions',
+      'Provided Level 1 remote technical support for Cisco security products (ASA Firewalls, NGFW FTD, ISE) across 500+ enterprise clients in banking and aviation sectors, maintaining zero missed SLA conditions',
+      'Automated network configuration reporting using Python and Bash scripts on Linux servers, reducing manual audit time by 35% and improving compliance tracking across 10+ enterprise accounts',
+      'Created and maintained knowledge base articles and ITSM workflows to streamline incident resolution for recurring issues across the team',
     ],
-    tech: ['Python', 'TCP/IP', 'DNS', 'VPN', 'Network Monitoring Tools'],
+    tech: ['Python', 'Bash', 'Linux', 'Cisco ASA', 'Cisco NGFW FTD', 'Cisco ISE', 'ITSM'],
+  },
+  {
+    role: 'Software Developer Intern',
+    company: 'Exposys Data Labs',
+    location: 'India',
+    duration: 'Sept 2021 - Oct 2021',
+    logo: 'ED',
+    bullets: [
+      'Developed a language translation app using Flutter (Dart) on Android Studio, supporting translations from English to multiple languages with integrated read-aloud and voice recognition features',
+      'Authored a comprehensive report documenting the app development process, contributing to the team\'s knowledge base and improving project documentation',
+    ],
+    tech: ['Flutter', 'Dart', 'Android Studio'],
   },
 ]
 
@@ -73,7 +87,7 @@ export default function Experience() {
             style={{ backgroundColor: '#2C3E50' }}
           />
 
-          <div className="space-y-10 md:space-y-14">
+          <div className="space-y-0">
             {experiences.map((exp, index) => {
               const isLeft = index % 2 === 0
               return (
@@ -84,6 +98,7 @@ export default function Experience() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="relative grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] md:gap-0 gap-8 items-start"
+                  style={{ marginTop: index === 0 ? 0 : '-5rem' }}
                 >
                   {/* Card - left column when isLeft, right column when !isLeft */}
                   <div
