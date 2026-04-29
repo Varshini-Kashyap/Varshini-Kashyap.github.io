@@ -4,6 +4,46 @@ import { HiDocumentText } from 'react-icons/hi'
 
 const projects = [
   {
+    title: 'CollabBoard - Real-Time Collaborative Kanban Board',
+    description:
+      'Real-time collaborative Kanban board with live multi-user updates. Built with ASP.NET Core 8 and SignalR for the backend, Flutter Web for the frontend, deployed on Azure App Service and Firebase Hosting.',
+    tech: ['ASP.NET Core 8', 'SignalR', 'Flutter Web', 'Azure', 'Firebase'],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/Varshini-Kashyap/Collab_Board.git', icon: 'github' },
+    ],
+    status: 'Mar 2026',
+  },
+  {
+    title: 'TwinMind Copilot - Real-Time AI Meeting Assistant',
+    description:
+      'Real-time AI meeting copilot transcribing live audio every 5 seconds and surfacing 3 contextual suggestions per batch. Engineered a chain-of-thought prompt pipeline forcing named entity extraction before generation, eliminating hallucination and grounding every suggestion in what was actually said. Deployed on Vercel with streaming chat and session export.',
+    tech: ['React', 'Groq Whisper Large V3', 'GPT-OSS 120B', 'Vite', 'Vercel'],
+    links: [
+      { label: 'Live Demo', url: 'https://twinmind-copilot-ten.vercel.app/', icon: 'external' },
+    ],
+    status: 'Apr 2026',
+  },
+  {
+    title: 'NLBot - Voice-Driven NL Task Planner',
+    description:
+      'Built a voice-driven task planning interface for a simulated robot agent that transcribes spoken commands via Web Speech API, decomposes goals into structured JSON action plans using Claude Sonnet over WebSocket, and executes them on a 2D GMU campus simulation with plan review, mid-task correction, and automated error recovery across 7 campus buildings.',
+    tech: ['Python', 'NLP', 'ROS', 'HRI'],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/Varshini-Kashyap/NL_Bot.git', icon: 'github' },
+    ],
+    status: 'Apr 2026',
+  },
+  {
+    title: 'ConnectEd - AI Alumni Mentorship Platform',
+    description:
+      'AI mentor-matching platform built in 24 hours at HackFax x PatriotHacks 2026. Integrated Groq LLM recommendations into a FastAPI backend with JWT auth and React 18 frontend, containerized with Docker.',
+    tech: ['FastAPI', 'React 18', 'Groq API', 'JWT', 'SQLite', 'Docker'],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/Varshini-Kashyap/ConnectEd.git', icon: 'github' },
+    ],
+    status: 'Jan 2026',
+  },
+  {
     title: 'Axono- AI Building Permits Chatbot',
     description:
       'Production RAG-based chatbot helping users navigate DC and Montgomery County building permit processes. Built with Claude Sonnet API, ChromaDB vector storage, and Flask backend, deployed on AWS ECS Fargate with EFS persistent storage and ALB.',
@@ -34,16 +74,6 @@ const projects = [
     status: 'Dec 2025',
   },
   {
-    title: 'ConnectEd - AI Alumni Mentorship Platform',
-    description:
-      'AI mentor-matching platform built in 24 hours at HackFax x PatriotHacks 2026. Integrated Groq LLM recommendations into a FastAPI backend with JWT auth and React 18 frontend, containerized with Docker.',
-    tech: ['FastAPI', 'React 18', 'Groq API', 'JWT', 'SQLite', 'Docker'],
-    links: [
-      { label: 'GitHub', url: 'https://github.com/Varshini-Kashyap/ConnectEd.git', icon: 'github' },
-    ],
-    status: 'Jan 2026',
-  },
-  {
     title: 'Sign Language Recognition System',
     description:
       'Real-time ML system recognizing ASL gestures with 92% classification accuracy. Trained a CNN model with TensorFlow and OpenCV on custom gesture datasets; published peer-reviewed findings in PiCES Journal.',
@@ -52,16 +82,6 @@ const projects = [
       { label: 'Publication', url: 'https://pices-journal.com/ojs/index.php/pices/article/view/380/', icon: 'paper' },
     ],
     status: 'Dec 2022',
-  },
-  {
-    title: 'AI-Powered Homework Grader',
-    description:
-      'Solo-built React application for teachers to create assignments, auto-grade submissions using keyword matching with partial credit, and track student performance with analytics dashboards. Features dynamic question management, real-time feedback generation, and per-question performance breakdowns.',
-    tech: ['React', 'JavaScript', 'Jest', 'React Testing Library', 'CSS3'],
-    links: [
-      { label: 'GitHub', url: 'https://github.com/Varshini-Kashyap/Homework-Grader.git', icon: 'github' },
-    ],
-    status: 'Sep 2025',
   },
 ]
 

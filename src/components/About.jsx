@@ -66,16 +66,16 @@ export default function About() {
           >
             <div className="max-w-3xl">
               <p className="text-[#000000] text-base md:text-lg leading-relaxed mb-4">
-                I am a CS grad student at George Mason University with 2+ years of experience building production systems. I care about writing software that actually ships  not just demos, but real products that people use. My work spans AI backends, full-stack web platforms, and cloud infrastructure on AWS.
+                I am a CS grad student at George Mason University with 2+ years of experience building and leading production systems. I care about writing software that actually ships, not just demos, but real products that people use. My work spans AI backends, full-stack web platforms, and cloud infrastructure on AWS.
               </p>
               <p className="text-[#000000] text-base md:text-lg leading-relaxed mb-4">
-               At InterAgency Inc., I got to work on problems I found genuinely interesting: evaluating 15 LLMs against 140 real questions to figure out which one actually performs best, building a RAG chatbot that helps people navigate government permit processes, and taking a proposal management tool from Figma mockups all the way to AWS production with React, Node.js, MySQL, Auth0, and Stripe.
+                At InterAgency Inc., I led the end-to-end development of two production systems: Perry, a RAG-based AI assistant where I designed the evaluation pipeline, benchmarked 15 LLMs against 140 real-world questions, and drove the architecture from concept to AWS deployment, and a proposal management platform I took from Figma wireframes to a live product with React, Node.js, MySQL, Auth0, and Stripe, achieving 85% team adoption.
+              </p>
+              <p className="text-[#000000] text-base md:text-lg leading-relaxed mb-4">
+                Beyond engineering, I mentor student builders at hackathons and create-a-thons, support GMU's Mason Autism Support Initiative through technical workshops, and have shipped projects across five hackathons including a real-time AI meeting assistant, an event-driven microservices platform, and an AI mentor-matching app built in 24 hours.
               </p>
               <p className="text-[#000000] text-base md:text-lg leading-relaxed mb-5">
-                What drives me is the intersection of innovation and impact: leveraging technologies like prompt engineering, multi-agent systems, and cloud-native architectures to create software that's not just functional, but transformative. Whether it's reducing manual workflows by 60% or building developer tools that detect 90% of bugs automatically, I'm motivated by measurable outcomes that matter.
-              </p>
-              <p className="text-[#000000] text-base md:text-lg leading-relaxed mb-5">
-                Currently seeking full-time Software Engineer or AI/ML Engineer opportunities starting May 2026 where I can continue building, learning, and leading.
+                I lead best when the problem is hard, the stakes are real, and the team needs someone who can both architect a solution and bring others along for it. Seeking full-time Software Engineer or AI/ML Engineer roles starting May 2026.
               </p>
               <div className="mt-2 flex flex-wrap gap-3">
                 {highlights.map((item, index) => (
