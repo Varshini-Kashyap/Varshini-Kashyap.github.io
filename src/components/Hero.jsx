@@ -122,13 +122,6 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
           >
             <a
-              href="/resume.pdf"
-              download
-              className="px-8 py-3 rounded-full bg-white text-[#2C3E50] font-semibold hover:bg-white/90 transition-colors"
-            >
-              View Resume
-            </a>
-            <a
               href="#contact"
               className="px-8 py-3 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-[#2C3E50] transition-colors"
             >
